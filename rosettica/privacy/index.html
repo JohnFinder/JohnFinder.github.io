@@ -1,25 +1,89 @@
-<!doctype html>
-<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Rosettica Privacy Policy</title>
-<style>body{font:17px/1.65 system-ui,sans-serif;max-width:760px;margin:48px auto;padding:0 24px;color:#20242b}h1{line-height:1.2}h2{font-size:1.2em;margin-top:2em}p{margin:1em 0}aside{border-left:3px solid #6884cf;padding-left:16px;color:#515b6c}</style>
-<h1>Rosettica Privacy Policy</h1>
-<p>Last updated: October 5, 2026</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy · Rosettica</title>
+  <meta name="description" content="Privacy Policy for the Rosettica translation app." />
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f7f5;
+      --fg: #1a1a1a;
+      --muted: #5c5c5c;
+      --card: #ffffff;
+      --border: #e6e6e2;
+      --accent: #0b6bcb;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121417;
+        --fg: #f2f4f7;
+        --muted: #a8b0bc;
+        --card: #1b1f26;
+        --border: #2c3340;
+        --accent: #6cb6ff;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      background: var(--bg);
+      color: var(--fg);
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 28px 24px;
+    }
+    h1 { font-size: 1.75rem; margin: 0 0 8px; line-height: 1.25; }
+    h2 { font-size: 1.15rem; margin: 28px 0 10px; }
+    p, li { color: var(--fg); }
+    .muted { color: var(--muted); font-size: 0.95rem; }
+    ul { padding-left: 1.2rem; }
+    a { color: var(--accent); }
+    footer {
+      margin-top: 28px;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="card">
+      <h1>Rosettica</h1>
+      <p class="muted">Privacy Policy · Last updated: October 5, 2026</p>
+      <section aria-label="Privacy policy">
+<h2>1. Overview</h2>
 <p>Rosettica does not require an account and includes no advertising or third-party analytics SDKs. You choose where translation text is processed. No content is sent automatically to a different translation server.</p>
-<h2>On-device translation</h2>
+<h2>2. On-device translation</h2>
 <p>Preparing on-device translation downloads a model from Hugging Face. The provider receives download requests and associated network information. After preparation, text translation runs on your device; your translation text is not sent to the model provider.</p>
-<h2>Nearby Mac and configured servers</h2>
+<h2>3. Nearby Mac and configured servers</h2>
 <p>Nearby-Mac mode sends text to the Mac you select on the same network. The current connection uses HTTP with a pairing token and is not encrypted. Use a trusted network. Remote mode sends text to your configured server. Its operator controls processing and retention. HTTPS encrypts the connection; HTTP does not. API keys and pairing credentials are kept in the system Keychain. Endpoint addresses and other preferences are saved locally.</p>
-<h2>Images and voice</h2>
+<h2>4. Images and voice</h2>
 <p>Image text recognition runs locally. Importing a photo can involve the system photo library, including Apple's iCloud Photos if you use it. Apple speech recognition may use online services depending on your device and language. Text-to-speech uses system voices. These services are separate from the chosen text translation backend.</p>
-<h2>History, preferences and backups</h2>
+<h2>5. History, preferences and backups</h2>
 <p>Translation history, saved language combinations, glossary entries and quality baselines are saved locally. You can delete history and disable new history. Optional iCloud backup sends your history to your iCloud account. Deleting local records does not remove a previous backup. A system share extension temporarily saves shared text in a private shared inbox for you to review in Rosettica before translation.</p>
-<h2>Feedback and measurements</h2>
+<h2>6. Feedback and measurements</h2>
 <p>Quality issue reports are saved locally without source text or translations. Optional local task measurements are off by default and include timings, language counts, outcomes and dates, with no text, server addresses or credentials. Nothing is uploaded automatically. You may inspect, export or clear diagnostics. Exported quality evaluations contain the public evaluation samples and their model outputs.</p>
-<h2>Purchases</h2>
+<h2>7. Purchases</h2>
 <p>Optional tips are handled by Apple's StoreKit and App Store payment services. Rosettica does not receive payment card details.</p>
-<h2>Your controls</h2>
+<h2>8. Your controls</h2>
 <p>Review the active processing destination before translating, choose whether to keep history, delete local records, manage model files and credentials, and control optional backup and diagnostic exports. Content already sent to a configured server is subject to that server operator's practices. Removing the app does not delete a previously created iCloud backup.</p>
-<h2>Contact</h2>
+<h2>9. Contact</h2>
 <p>Privacy questions: <a href="mailto:soprano.true_13@icloud.com">soprano.true_13@icloud.com</a>.</p>
-
+      </section>
+      <footer>Rosettica · Privacy Policy</footer>
+    </div>
+  </main>
+</body>
 </html>
