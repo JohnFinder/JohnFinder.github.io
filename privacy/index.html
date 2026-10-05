@@ -48,23 +48,6 @@
     h2 { font-size: 1.15rem; margin: 28px 0 10px; }
     p, li { color: var(--fg); }
     .muted { color: var(--muted); font-size: 0.95rem; }
-    .lang {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-      margin: 16px 0 24px;
-    }
-    .lang a {
-      text-decoration: none;
-      color: var(--accent);
-      border: 1px solid var(--border);
-      border-radius: 999px;
-      padding: 6px 12px;
-      font-size: 0.9rem;
-    }
-    .section { display: none; }
-    .section:target, .section#en { display: block; }
-    .section:target ~ #en { display: none; }
     ul { padding-left: 1.2rem; }
     a { color: var(--accent); }
     footer {
@@ -78,13 +61,8 @@
   <main>
     <div class="card">
       <h1>Blood Oxygen Monitor</h1>
-      <p class="muted">Privacy Policy · Last updated: September 9, 2026</p>
-      <div class="lang">
-        <a href="#en">English</a>
-        <a href="#zh">中文</a>
-      </div>
-
-      <section id="en" class="section">
+      <p class="muted">Privacy Policy · Last updated: October 5, 2026</p>
+      <section id="en">
         <h2>1. Overview</h2>
         <p>
           Blood Oxygen Monitor (“the App”) is an iPhone and Apple Watch companion for monitoring
@@ -110,6 +88,7 @@
           <li>Health and monitoring data are stored <strong>locally on your devices</strong> (and in Apple Health where applicable).</li>
           <li>Shared data between iPhone, Apple Watch, and widgets uses Apple’s <strong>App Group</strong> / system frameworks on your devices.</li>
           <li><strong>We do not operate a backend that uploads your health readings to our servers.</strong> The App is designed for on-device processing.</li>
+          <li><strong>Optional iCloud backup:</strong> If you choose Backup Now, the App encrypts alert times and the thresholds set at those times on your device, then stores the encrypted file in your iCloud account. It does not include blood oxygen values. You may also choose to include altitude and pressure history in an encrypted backup. You create one password for both; the App does not store it and cannot recover the backups if you lose it. Restoring alerts requires renewed Apple Health access, and records without matching readings cannot be reconstructed. Earlier unencrypted backups are replaced after a successful encrypted backup or restore, or can be deleted by you.</li>
         </ul>
 
         <h2>4. Sharing</h2>
@@ -156,85 +135,11 @@
         </p>
       </section>
 
-      <section id="zh" class="section">
-        <h2>1. 概述</h2>
-        <p>
-          Blood Oxygen Monitor（「本应用」）是一款 iPhone 与 Apple Watch 配套应用，用于读取 Apple 健康 / HealthKit 中的血氧（SpO₂）数据并提供可选提醒。
-          本政策说明本应用如何处理相关信息。
-        </p>
-        <p>
-          <strong>重要提示：</strong>本应用仅用于个人健康监测参考，并非医疗器械，不用于诊断或治疗，也不能替代专业医疗意见。出现危急症状请立即就医。
-        </p>
-
-        <h2>2. 我们处理的数据</h2>
-        <ul>
-          <li><strong>健康数据（血氧及 HealthKit 样本）：</strong>在你授权后从 Apple 健康读取，仅在设备上用于监测、提醒、趋势、夜间报告、小组件及你主动发起的导出。</li>
-          <li><strong>应用设置：</strong>提醒阈值、报警偏好、主题等，保存在本机。</li>
-          <li><strong>会员 / 购买状态：</strong>用于解锁高级功能。支付由 Apple 处理，我们不会收到你的完整银行卡信息。</li>
-          <li><strong>可选环境信息：</strong>若功能启用（例如图表相关的海拔 / 气压缓存），可能与读数一起保存在本机。</li>
-        </ul>
-
-        <h2>3. 数据存储位置</h2>
-        <ul>
-          <li>健康与监测数据保存在<strong>你的设备本地</strong>（以及适用的 Apple 健康中）。</li>
-          <li>iPhone、Apple Watch 与小组件之间通过系统 <strong>App Group</strong> 等机制在本机共享。</li>
-          <li><strong>我们没有将健康读数上传到自有服务器的后端设计。</strong>数据处理以本机为主。</li>
-        </ul>
-
-        <h2>4. 共享</h2>
-        <ul>
-          <li>我们不出售你的健康数据。</li>
-          <li>购买与订阅管理由 <strong>Apple</strong> 按其条款与隐私政策处理。</li>
-          <li>若你使用导出 / 分享功能，目标位置由你自行选择（如邮件、文件或其他 App）。</li>
-        </ul>
-
-        <h2>5. 高级功能与购买</h2>
-        <p>
-          监测与提醒按应用内说明提供；小组件与部分分析功能可能需要高级订阅或权益。
-          计费、退款、家人「询问购买」等由 Apple / App Store 处理。
-        </p>
-        <p>
-          使用条款（Apple 标准 EULA）：
-          <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">Apple Licensed Application End User License Agreement</a>
-        </p>
-
-        <h2>6. 你的选择</h2>
-        <ul>
-          <li>在「设置 → 隐私与安全性 → 健康」中撤销 HealthKit 授权。</li>
-          <li>删除本应用（及手表端）或使用应用内删除选项以清除本地数据。</li>
-          <li>在 Apple ID 订阅设置中管理或取消订阅。</li>
-        </ul>
-
-        <h2>7. 儿童</h2>
-        <p>
-          本应用不面向 13 岁以下儿童（或以你所在地区法律规定的最低年龄为准）。
-          请勿在禁止情形下用本应用收集儿童健康数据。
-        </p>
-
-        <h2>8. 变更</h2>
-        <p>
-          我们可能随产品更新修订本政策，并以页首「最后更新日期」为准。
-          更新后继续使用即表示你接受修订后的政策。
-        </p>
-
-        <h2>9. 联系</h2>
-        <p>
-          隐私相关问题：
-          <a href="mailto:soprano.true_13@icloud.com">soprano.true_13@icloud.com</a>
-        </p>
-      </section>
-
       <footer>
         This page is intended for App Store Connect and in-app Privacy Policy links.
         Host it on GitHub Pages (or any public HTTPS URL) and keep it reachable during App Review.
       </footer>
     </div>
   </main>
-  <script>
-    // Default to English when no hash is present.
-    if (!location.hash) {
-      history.replaceState(null, "", "#en");
-    }
-  </script>
 </body>
 </html>
