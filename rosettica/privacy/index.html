@@ -1,44 +1,45 @@
-<!doctype html>
-<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Rosettica Privacy Policy</title>
-<style>body{font:17px/1.65 system-ui,sans-serif;max-width:760px;margin:48px auto;padding:0 24px;color:#20242b}h1{line-height:1.2}h2{font-size:1.2em;margin-top:2em}p{margin:1em 0}aside{border-left:3px solid #6884cf;padding-left:16px;color:#515b6c}</style>
-<h1>Rosettica Privacy Policy</h1>
-<p>Last updated: October 5, 2026 · <a href="#zh">中文</a></p>
-<p>Rosettica does not require an account and includes no advertising or third-party analytics SDKs. You choose where translation text is processed. No content is sent automatically to a different translation server.</p>
-<h2>On-device translation</h2>
-<p>Preparing on-device translation downloads a model from Hugging Face. The provider receives download requests and associated network information. After preparation, text translation runs on your device; your translation text is not sent to the model provider.</p>
-<h2>Nearby Mac and configured servers</h2>
-<p>Nearby-Mac mode sends text to the Mac you select on the same network. The current connection uses HTTP with a pairing token and is not encrypted. Use a trusted network. Remote mode sends text to your configured server. Its operator controls processing and retention. HTTPS encrypts the connection; HTTP does not. API keys and pairing credentials are kept in the system Keychain. Endpoint addresses and other preferences are saved locally.</p>
-<h2>Images and voice</h2>
-<p>Image text recognition runs locally. Importing a photo can involve the system photo library, including Apple's iCloud Photos if you use it. Apple speech recognition may use online services depending on your device and language. Text-to-speech uses system voices. These services are separate from the chosen text translation backend.</p>
-<h2>History, preferences and backups</h2>
-<p>Translation history, saved language combinations, glossary entries and quality baselines are saved locally. You can delete history and disable new history. Optional iCloud backup sends your history to your iCloud account. Deleting local records does not remove a previous backup. A system share extension temporarily saves shared text in a private shared inbox for you to review in Rosettica before translation.</p>
-<h2>Feedback and measurements</h2>
-<p>Quality issue reports are saved locally without source text or translations. Optional local task measurements are off by default and include timings, language counts, outcomes and dates, with no text, server addresses or credentials. Nothing is uploaded automatically. You may inspect, export or clear diagnostics. Exported quality evaluations contain the public evaluation samples and their model outputs.</p>
-<h2>Purchases</h2>
-<p>Optional tips are handled by Apple's StoreKit and App Store payment services. Rosettica does not receive payment card details.</p>
-<h2>Your controls</h2>
-<p>Review the active processing destination before translating, choose whether to keep history, delete local records, manage model files and credentials, and control optional backup and diagnostic exports. Content already sent to a configured server is subject to that server operator's practices. Removing the app does not delete a previously created iCloud backup.</p>
-<h2>Contact</h2>
-<p>Privacy questions: <a href="mailto:soprano.true_13@icloud.com">soprano.true_13@icloud.com</a>.</p>
-<section lang="zh-Hans" id="zh">
-<h1>Rosettica 隐私政策</h1>
-<p>最后更新：2026 年 10 月 5 日</p>
-<p>Rosettica 无需注册账户，不包含广告或第三方分析 SDK。你自行选择翻译文本的处理位置。应用不会自动切换翻译服务器。</p>
-<h2>设备端翻译</h2>
-<p>准备设备端翻译时，应用会从 Hugging Face 下载模型。模型提供方会收到下载请求和相关网络信息。准备完成后，翻译在你的设备上运行，翻译文本不会发送给模型提供方。</p>
-<h2>附近 Mac 与自定义服务器</h2>
-<p>附近 Mac 模式将文本发送到你在同一网络中选择的 Mac。当前连接使用 HTTP 和配对令牌，不进行加密，请使用可信网络。远程模式将文本发送到你配置的服务器，由服务器运营者决定处理和保留方式。HTTPS 可加密连接，HTTP 不会加密。API 密钥与配对凭据保存在系统钥匙串中，服务器地址和其他偏好保存在本机。</p>
-<h2>图片与语音</h2>
-<p>图片文字识别在本机运行。导入照片可能涉及系统照片图库及你启用的 Apple iCloud 照片。Apple 语音识别可能根据设备和语言使用在线服务；语音朗读使用系统声音。这些服务与所选的文本翻译后端独立。</p>
-<h2>历史、偏好与备份</h2>
-<p>翻译历史、语言组合、术语表和质量基线保存在本机。你可以删除历史并关闭新历史保存。可选的 iCloud 备份会将历史发送到你的 iCloud 账户。删除本地记录不会删除已有备份。系统分享扩展会临时将分享文本保存在私有共享收件箱，供你在 Rosettica 中确认后翻译。</p>
-<h2>反馈与测量</h2>
-<p>质量问题反馈保存在本机，不包含原文或译文。可选的本地任务测量默认关闭，仅记录耗时、语言数量、结果和日期，不包含文本、服务器地址或凭据。数据不会自动上传。你可以查看、导出或清除诊断记录。导出的质量评估包含公开评估样本及模型输出。</p>
-<h2>购买</h2>
-<p>可选赞赏由 Apple StoreKit 和 App Store 支付服务处理。Rosettica 不会收到银行卡信息。</p>
-<h2>你的控制与联系</h2>
-<p>翻译前查看当前处理位置；你可以管理历史、模型文件、凭据、备份和诊断导出。已发送到服务器的内容受其运营者的规则约束。卸载应用不会删除已有的 iCloud 备份。</p>
-<p>隐私问题请联系：<a href="mailto:soprano.true_13@icloud.com">soprano.true_13@icloud.com</a>。</p>
-</section>
-</html>
+# Rosettica 改进实现与验证记录
+
+更新日期：2026-10-05
+
+## 已实现
+
+- 首次引导：明确处理位置、模型下载大小、设备与空间要求；用户主动选择目标语言并确认下载。
+- 翻译流程：自动或手动源语言、逐语言进度、停止保留部分结果、失败单项重试、成功结果合并、实际处理来源标记。
+- 工作流：保存语言组合、术语保护、复制全部、导出、系统分享、可搜索收藏和复用的历史。
+- 输入：本机图片 OCR、相机/图库导入后编辑、文本与图片文件批次、系统分享扩展私有收件箱。
+- 附近 Mac：显式设备选择、二维码配对、连接测试、每台设备独立钥匙串凭据。
+- 远程服务器：多端点保存、独立凭据、显式选择、源语言传递；不自动切换目的地。
+- 语音对话：主界面入口、处理位置与 Apple 语音服务说明、历史保存偏好与失败提示。
+- 隐私：应用专属说明、默认关闭的本机诊断、可查看/导出/清除、质量反馈不保存原文和译文。
+- 质量：10 个固定公开样本、人工评分、基线保存与比较、样本及提示版本记录。
+- 界面：Mac 输入结果并排、iPhone 堆叠、原生可读文本、动态字体、多语言搜索。
+- 本地化：新增产品内容覆盖英文、简繁中文、日文、德文、法文；其他既有语言保留，新增内容可能回退英文。
+- 产品资料：按实际能力重写商店文案，准备真实用户验证计划。
+
+## 隐私网站
+
+复用现有开发者 GitHub Pages 站点，新增独立页面：
+https://johnfinder.github.io/rosettica/privacy/
+
+原血氧 App 的 https://johnfinder.github.io/privacy/ 保持原状。
+英文页面源码保存在 `privacy-policy.html`，沿用已有公开联系邮箱。
+网站提交：8834dc62a110bcf574a440baa4fc74c94fba47d7。
+
+## 验证结果
+
+- macOS 全套单元测试：59 项中 58 项通过；既有局域网地址健康检查 `healthEndpointRespondsOnLANAddress` 超时。回环地址、认证及请求大小等检查通过，超时原因尚未确认。
+- 最后修改后的新增工作流测试：11 项全部通过，覆盖取消、晚到响应、逐语言失败与重试、源语言、批次、术语、诊断隐私、历史、配对、旧备份及端点凭据隔离。
+- iPhone 模拟器界面测试：3 项全部通过，覆盖英文/中文引导、隐私入口和设置流程。
+- iOS 模拟器构建通过；macOS 构建及工作流测试通过。
+- 产品主要语言缺失项为 0；变更格式检查通过。
+
+## 发布前仍需真实环境完成
+
+- 排查局域网地址健康检查超时，并用真实 Mac 与 iPhone 验证发现、配对和翻译。
+- 开发者账户中注册 App Group `group.jzm.rosettica` 并验证签名后的分享扩展。
+- 真机相机、模型下载/性能、Apple 语音、iCloud、StoreKit 验证。
+- 使用真实模型完成质量评分；邀请真实用户访谈和 7 天回访，不能用测试替代用户数据。
+- 确认独立支持页面及最终商店截图、隐私披露和生产签名；visionOS 未验证。
+
+本记录说明代码实现和已有证据，不代表已完成正式发布或真实用户验证。
