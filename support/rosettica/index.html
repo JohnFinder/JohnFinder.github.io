@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Support for on-device translation, nearby Mac connections, configured servers, images, voice, and history."><meta name="color-scheme" content="light dark">
+<link rel="canonical" href="https://johnfinder.github.io/support/rosettica/"><link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22%2317624e%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2245%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2240%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%3ER%3C%2Ftext%3E%3C%2Fsvg%3E">
+<title>Rosettica Support</title><style>
+    :root { --bg:#f4f7f5; --fg:#142e27; --muted:#52665f; --card:#fff; --border:#d8e3dd; --accent:#17624e; --soft:#eaf2ed; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+    main { width:min(100%,860px); margin:auto; padding:36px 24px 48px; }
+    header { padding:24px 0 30px; }
+    .brand { color:var(--accent); font-size:1rem; font-weight:700; letter-spacing:.04em; }
+    h1 { margin:10px 0 12px; font-size:clamp(2.2rem,7vw,3.5rem); line-height:1.12; letter-spacing:-.045em; }
+    h2 { margin:0 0 12px; font-size:1.4rem; line-height:1.3; }
+    p { margin:0 0 16px; }
+    .intro { max-width:640px; color:var(--muted); font-size:1.1rem; }
+    section { margin:0 0 20px; padding:28px; background:var(--card); border:1px solid var(--border); border-radius:20px; }
+    a { color:var(--accent); text-underline-offset:3px; overflow-wrap:anywhere; }
+    a:focus-visible,summary:focus-visible { outline:3px solid var(--accent); outline-offset:5px; border-radius:4px; }
+    .button { display:inline-flex; align-items:center; min-height:48px; padding:12px 20px; color:#fff; background:var(--accent); font-weight:600; text-decoration:none; border-radius:12px; }
+    .email { margin-top:14px; }
+    .muted,footer { color:var(--muted); }
+    ul,ol { margin:12px 0 16px; padding-left:24px; }
+    li { margin:7px 0; }
+    .note { padding:16px; margin:18px 0 0; background:var(--soft); border-radius:12px; font-size:.95rem; }
+    details { border-top:1px solid var(--border); padding:16px 0; }
+    details:last-child { padding-bottom:0; }
+    summary { cursor:pointer; font-weight:600; padding:4px 0; }
+    details p { margin:12px 0 0; color:var(--muted); }
+    footer { padding:10px 0 0; font-size:.9rem; }
+    @media (max-width:480px) { main { padding:20px 16px 32px; } section { padding:22px 18px; } header { padding-top:16px; } }
+    @media (prefers-color-scheme:dark) { :root { --bg:#101c18; --fg:#e6eee9; --muted:#a5b9ae; --card:#172720; --border:#30473b; --accent:#8bd4b3; --soft:#223a2c; } .button { color:#112c20; } }
+  </style></head><body><main><header><div class="brand">Rosettica · Translation Support</div><h1>How can we help?</h1><p class="intro">Support for on-device translation, nearby Mac connections, configured servers, images, voice, and history.</p></header>
+<section aria-labelledby="contact-title"><h2 id="contact-title">Contact support</h2><p>Have a question or found something that isn't working? Send us an email with a short description of the issue.</p>
+<a class="button" href="mailto:soprano.true_13@icloud.com?subject=Rosettica%20Support">Email Rosettica Support</a><p class="email"><a href="mailto:soprano.true_13@icloud.com">soprano.true_13@icloud.com</a></p>
+<p class="muted">Please include your app version, device model, operating-system version, language pair, and selected translation mode. Describe the error or result you received using a short non-sensitive example if needed.</p><p class="note">Do not send API keys, pairing tokens, private documents, or complete translation history. Remove credentials and personal text from screenshots and logs.</p></section>
+<section aria-labelledby="start-title"><h2 id="start-title">Getting started</h2><ol><li>Choose where text will be processed: on your device, on a nearby Mac, or by a server you configure.</li><li>Prepare the model before using on-device text translation.</li><li>Select your source and target languages, then translate a short sample.</li><li>Review the active processing destination and your history preferences before translating private content.</li></ol></section><section aria-labelledby="faq-title"><h2 id="faq-title">Common questions</h2><details><summary>Why does on-device preparation need an internet connection?</summary><p>Preparing on-device translation downloads a model from Hugging Face. After preparation, text translation runs on your device and the translation text is not sent to the model provider. Model downloads are separate from text processing.</p></details>
+<details><summary>How do I troubleshoot a nearby Mac connection?</summary><p>Check that the selected Mac is available on the same network, its translation service is running, and pairing is configured. The current nearby-Mac connection uses HTTP with a pairing token and is not encrypted, so use a trusted network. Do not send pairing credentials to support.</p></details>
+<details><summary>What should I check when a configured server fails?</summary><p>Confirm the server address, selected model, and credentials with the server operator. Check whether the service is reachable. Processing and retention are controlled by that server. Rosettica does not automatically send your text to a different translation server.</p></details>
+<details><summary>How can I report a translation-quality issue?</summary><p>Include the language pair and translation mode, then describe the issue. A short non-sensitive example can help reproduce it. The app&#x27;s local quality issue reports do not save source text or translations, so any example you email is information you choose to share.</p></details>
+<details><summary>Are image and voice processing the same as text translation?</summary><p>Image text recognition runs locally. Importing photos can involve system photo services. Apple speech recognition may use online services depending on the device and language, and text-to-speech uses system voices. These services are separate from the text translation destination.</p></details>
+<details><summary>How do I manage history and backups?</summary><p>You can delete local history and disable new history. Optional iCloud backup stores history in your iCloud account. Deleting local history or removing the app does not remove an earlier iCloud backup. Review backup and diagnostic-export controls separately.</p></details>
+<details><summary>What should I do about an optional tip purchase?</summary><p>Optional tips are handled by Apple&#x27;s StoreKit and App Store payment services. Check the purchase status and receipt in your Apple Account. For an app-side purchase issue, contact support without including payment card details.</p></details>
+<details><summary>Where can I read about privacy?</summary><p>See the privacy policy for processing destinations, model downloads, image and voice services, local history, backups, and optional diagnostics. <a href="https://johnfinder.github.io/rosettica/privacy/">Rosettica Privacy Policy</a>.</p></details>
+</section><footer><p>Rosettica Support · <a href="https://johnfinder.github.io/rosettica/privacy/">Privacy Policy</a> · <a href="https://johnfinder.github.io/support/">All app support</a><br>Last updated: October 9, 2026</p></footer></main></body></html>
