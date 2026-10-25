@@ -41,3 +41,12 @@ Then ask the agent to create/push the repo; tools can use `$GH_TOKEN` / `$GITHUB
 ## Contact email
 
 Replace `support@bloodoxygenmonitor.app` in `privacy/index.html` if you use a different address.
+
+
+## Anyaudiobooks — October 25, 2026
+
+- Privacy: https://johnfinder.github.io/privacy/anyaudiobooks/
+- Support: https://johnfinder.github.io/support/anyaudiobooks/
+- Contact: soprano.true_13@icloud.com
+
+The developer does not operate public speech services, book-sharing nodes, or voice marketplaces. Independent providers may retain uploaded content; the policy describes local processing, optional iCloud, external services, sharing, and public records.
